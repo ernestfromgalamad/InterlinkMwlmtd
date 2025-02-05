@@ -25,12 +25,12 @@ if (!isset($_SESSION['user_id'])) {
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Demo : Dashboard - Analytics | sneat - Bootstrap Dashboard PRO</title>
+    <title>Add Service</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets2/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets2/img/favicon/favicon.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -125,7 +125,7 @@ if (!isset($_SESSION['user_id'])) {
                                     </select>
                                 </div>
                                 <div class="col-md-12">
-                                    <label for="pricing" class="form-label">Pricing ($)</label>
+                                    <label for="pricing" class="form-label">Pricing (MWK)</label>
                                     <input type="number" class="form-control" id="pricing" name="pricing" placeholder="Enter the price" min="0" step="0.01" required />
                                 </div>
                                 <div class="col-md-12">

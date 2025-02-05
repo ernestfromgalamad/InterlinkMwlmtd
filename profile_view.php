@@ -112,10 +112,10 @@ if (isset($_SESSION['user_id'])) {
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+    <a href="index.php" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">iLanding</h1>
+        <img src="assets/img/logo_main_01.png" alt="">
+        <!-- <h1 class="sitename">iLanding</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -219,11 +219,7 @@ if (isset($_GET['id'])) {
                             <?php 
                             echo $first_name . ' ' . $last_name; 
                             
-                            // Generate flag emoji using country code
-                            $country_code = strtoupper(substr($country, 0, 2)); // Assuming country name is provided
-                            $flag_emoji = mb_convert_encoding('&#' . (127397 + ord($country_code[0])) . '&#' . (127397 + ord($country_code[1])) . ';', 'UTF-8', 'HTML-ENTITIES');
-                            
-                            echo ' ' . $flag_emoji; 
+                          
                             ?>
                         </h3>
                         <p><i class="fas fa-envelope"></i> <?php echo $email; ?></p>
@@ -253,23 +249,26 @@ if (isset($_GET['id'])) {
             </div>
 
             <!-- Welcoming Banner with Message Me Button -->
-            <div class="col-12 col-md-6 mb-4">
-                <div class="welcome-banner d-flex align-items-center justify-content-center text-white p-4" 
-                     style="background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%); 
-                            border-radius: 12px;">
-                    <div class="banner-text text-center">
-                    <h1 style="color: white;">Welcome to My Page</h1>
-                    <p class="lead mb-3" style="color: #f0f0f0;">
-                        Explore the range of specialized services I provide, designed to meet your unique needs. 
-                    </p>
+            <div class="col-12 col-md-6 mb-3 mt-4"> <!-- Added mt-4 to move it down -->
+    <div class="welcome-banner d-flex align-items-center justify-content-center text-white p-3"
+         style="background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+                border-radius: 10px;">
+        <div class="banner-text text-center">
+            <h2 style="color: white; font-size: 1.5rem;">Hello! Welcome to my profile</h2>
+            <p style="color: #f0f0f0; font-size: 0.9rem;">
+            Explore the range of specialized services I provide, designed to meet your unique needs. 
+            From tailored solutions that drive efficiency to expert guidance that ensures long-term success, my services are crafted with precision and innovation. 
+           
+            </p>
 
-                        <!-- Message Me Button with Messenger Icon -->
-                        <a href="#messageModal" class="btn btn-light mt-3" data-bs-toggle="modal" data-bs-target="#messageModal">
-                            <i class="fas fa-paper-plane me-2"></i>Message Me
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <!-- Message Me Button with Messenger Icon -->
+            <a href="#messageModal" class="btn btn-light mt-2 btn-sm" data-bs-toggle="modal" data-bs-target="#messageModal">
+                <i class="fas fa-paper-plane me-1"></i>Message Me
+            </a>
+        </div>
+    </div>
+</div>
+
         </div>
 
         <!-- Services Section -->

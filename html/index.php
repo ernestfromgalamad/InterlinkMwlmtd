@@ -82,7 +82,7 @@ if (isset($_SESSION['user_id'])) {
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets2/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets2/img/favicon/favicon.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

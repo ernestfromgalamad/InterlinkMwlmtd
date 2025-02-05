@@ -66,7 +66,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Demo : Dashboard - Analytics | sneat - Bootstrap Dashboard PRO</title>
+    <title>Edit Project</title>
 
     <meta name="description" content="" />
 

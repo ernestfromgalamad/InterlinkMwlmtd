@@ -65,10 +65,10 @@ include 'db.php';
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="index.php" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">iLanding</h1>
+        <img src="assets/img/logo_main_01.png" alt="">
+        <!-- <h1 class="sitename">iLanding</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -78,6 +78,7 @@ include 'db.php';
     <li><a href="#featured-talents">Featured Talents</a></li>
     <li><a href="#featured-services">Featured Services</a></li>
     <li><a href="#featured-projects">Explore Projects</a></li>
+    <li><a href="jobs.php">Remote Jobs</a></li>
     <!-- <li class="dropdown"><a href="#"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
       <ul>
         <li><a href="#">Blog</a></li>
@@ -91,9 +92,11 @@ include 'db.php';
   <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 </nav>
 
-<a class="btn-getstarted" href="index.html#about">
-    <i class="fas fa-sign-in-alt"></i> Sign in
+<a class="btn-getstarted" href="html/">
+    <i class="fas fa-sign-in-alt"></i> Sign In
 </a>
+
+
 
     </div>
   </header>
@@ -108,17 +111,18 @@ include 'db.php';
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-            <!-- <div class="company-badge mb-4">
-  <a href="signup_page_url_here" class="text-decoration-none">
-    <i class="bi bi-person-plus me-2"></i>
-    Working for your success
-  </a>
-</div> -->
+            <div class="company-badge mb-4">
+  <a href="jobs.php" class="text-decoration-none">
+  <i class="bi bi-search me-2"></i>
+Find Remote Jobs
+</a>
+
+</div>
 
 
               <h1 class="mb-4">
               Find Experts, <br>
-              Deliver Excellence, We Connect you to the <br>
+              Deliver Excellence! <br> We connect you to the <br>
                 <span class="accent-text">Right people</span>
               </h1>
 
@@ -128,7 +132,7 @@ include 'db.php';
               </p>
 
               <div class="hero-buttons">
-                <a href="#about" class="btn btn-primary me-0 me-sm-2 mx-1">Join as a professional</a>
+                <a href="#about" class="btn btn-primary me-0 me-sm-2 mx-1">Join Interlink</a>
                 <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-link mt-2 mt-sm-0 glightbox">
                   <i class="bi bi-play-circle me-1"></i>
                   Play Video
@@ -346,7 +350,7 @@ include 'db.php';
                         
                         <!-- Price and Delivery Time in one line -->
                         <p class="d-flex justify-content-between">
-                            <span><i class="fas fa-dollar-sign"></i> <strong>Price:</strong> $<?php echo $pricing; ?></span>
+                            <span> <strong>Prices from:</strong> MWK<?php echo $pricing; ?></span>
                             <span><i class="fas fa-clock"></i> <strong>Delivery Time:</strong> <?php echo $delivery_time; ?> hours</span>
                         </p>
                         <hr>
